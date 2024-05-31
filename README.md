@@ -48,16 +48,82 @@ For these exercises, wrap your logic in a single `console.log` statement:
 5. **Find Extremes in Prices**: Identify the highest and lowest-priced items, returning a string formatted as "Highest: X. Lowest: Y."
 6. **Object Transformation**: Using `Object.entries` and `reduce`, recreate the products object with keys 'name' and 'cost', maintaining their original values.
 
-#### Submission Guidelines
+Certainly! Here's the GitHub-style documentation explaining the provided code:
 
-- Submit the completed JavaScript file(s) containing your solutions.
-- Include comments to explain the logic behind your implementations, especially for the advanced exercises.
-- Prepare to discuss your approach, focusing on the "why" and "how" of your solutions during your assessment with a coach.
+---
 
-#### Evaluation Criteria
+### DJS06 Project Brief: Higher Order Functions
 
-- Correct application of JavaScript array methods to solve the given problems.
-- Ability to combine multiple array methods to manipulate and transform data effectively.
-- Code readability and efficiency.
-- Thoughtful commentary and explanation of your solution approach and decision-making process.
+This code snippet demonstrates various JavaScript array operations such as iteration, transformation, sorting, filtering, and reduction applied to sample data sets of names, provinces, and products.
 
+## Names and Provinces Operations
+
+### ForEach Basics
+
+- Iterates over each name and province and logs them to the console.
+
+### Uppercase Transformation
+
+- Transforms each province to uppercase and logs the result.
+
+### Name Lengths
+
+- Computes the length of each name and logs the result.
+
+### Sorting
+
+- Sorts the provinces array in alphabetical order and logs the result.
+
+### Filtering Cape
+
+- Filters out provinces containing the word "Cape" and logs the count of remaining provinces.
+
+### Finding 'S'
+
+- Checks if each name contains the letter 's' (case-insensitive) and logs the result.
+
+### Creating Object Mapping
+
+- Creates a mapping between names and provinces and logs the resulting object.
+
+## Products Operations
+
+### Advanced Exercises
+
+- **Logged Products:** Logs the names of all products.
+- **Filtered by Length:** Filters products by name length greater than 5 and logs the result.
+- **Price Manipulation:** Calculates the total price of all products with valid prices and logs the result.
+- **Concatenated Names:** Concatenates all product names and logs the result.
+- **Price Extremes:** Finds the highest and lowest prices among products with valid prices and logs the result.
+- **Transformed Object:** Transforms the products array into an object where the product names are keys and prices are values, then logs the result.
+### Explanations on Choices Made:
+
+#### Data Structure:
+- **Arrays for Names and Provinces:** Arrays are chosen to store the sample data for names and provinces as they provide a straightforward way to store and manipulate ordered collections of items.
+
+#### Iteration and Transformation:
+- **forEach Method:** Used to iterate over each element in the names and provinces arrays and log them to the console. This method is chosen for its simplicity and readability in performing an action for each element without creating a new array.
+- **map Method:** Employed to transform each province to uppercase and compute the length of each name. The map method is ideal for transforming each element of an array into a new array of the same length, preserving the original data while applying the transformation.
+
+#### Sorting:
+- **sort Method:** Applied to sort the provinces array alphabetically. The sort method is used as it provides a convenient way to sort the elements of an array in place, allowing for easy alphabetical ordering of the provinces.
+
+#### Filtering:
+- **filter Method:** Utilized to filter out provinces containing the word "Cape". The filter method is chosen for its ability to create a new array with all elements that pass a certain condition, enabling easy removal of undesired elements from the array.
+
+#### Reduction:
+- **reduce Method:** Employed to create a mapping between names and provinces. The reduce method is selected for its capability to accumulate values and construct a new object based on the elements of the array, allowing for the creation of a mapping between names and provinces.
+
+### Struggles Encountered:
+
+#### Handling Null Values:
+- Dealing with null values in the products array posed a challenge when calculating the total price. Extra precautions were taken to ensure that only valid prices are considered in the calculation, preventing unexpected errors.
+
+#### Error Handling:
+- Ensuring error-free execution of operations, especially when dealing with potential errors such as NaN (Not-a-Number) values in prices, required thorough error handling to maintain code reliability and stability.
+
+#### Maintaining Readability:
+- Striving to maintain code readability while implementing complex array operations was a constant concern. Efforts were made to write clear and concise code, utilizing appropriate variable names and comments to enhance understanding and maintainability.
+
+#### Optimization:
+- Optimizing the code for performance, especially in advanced exercises involving multiple array methods, required careful consideration to avoid unnecessary iterations and ensure efficient execution of operations. Constant refinement was undertaken to balance performance and readability.
